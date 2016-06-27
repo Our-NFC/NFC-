@@ -18,9 +18,9 @@
 <body>
 <!--头部-->
 <header class="nfc_sbanner">
-    <div class="container nfc_snav">
+    <div class="container">
         <div class="row">
-            <div class="col-sm-4 hidden-xs">
+            <div class="col-md-11 col-sm-10 col-xs-10">
                 <div class="nfc_slogo">
                     <a href="#">
                         <img class="" src="images/NFC_LOGO.png"/>
@@ -28,8 +28,8 @@
                     </a>
                 </div>
             </div>
-            <div class="col-sm-8 text-right nfc_logoff">
-                <a href="#" class="btn btn-border  active" role="button">注销</a>
+            <div class="col-md-1 col-sm-2 col-xs-2 nfc_logoff">
+                <a href="#" class="btn btn-border active"  data-toggle="modal" data-target=".bs-example-modal-sm" role="button">注销</a>
             </div>
         </div>
     </div>
@@ -42,14 +42,13 @@
                 <div class="sidenav">
                     <div class="post-head">
                         <img src="images/user_header.png"/><br>
-
                         <P> 服务状态:<span>正常</span></P>
                     </div>
                     <div class="list_approve">
                         <ul>
-                            <li class="li_1"><a href="#"><img src="images/approve_ico1.png"><span>认证</span></a></li>
-                            <li class="li_2"><a href="#"><img src="images/approve_ico2.png"><span>消息</span></a></li>
-                            <li class="li_3"><a href="#"><img src="images/approve_ico3.png"><Span>安全</Span></a></li>
+                            <li class="col-md-4 col-sm-4 col-xs-4 li_1"><a href="#"><img src="images/approve_ico1.png"><span>认证</span></a></li>
+                            <li class="col-md-4 col-sm-4 col-xs-4 li_2"><a href="#"><img src="images/approve_ico2.png"><span>消息</span></a></li>
+                            <li class="col-md-4 col-sm-4 col-xs-4 li_3"><a href="#"><img src="images/approve_ico3.png"><Span>安全</Span></a></li>
                         </ul>
                     </div>
                     <div class="list_nav">
@@ -68,18 +67,28 @@
             <main class="col-md-9 main-content">
                 <div class="main_wicket">
                     <h2>爱刷（北京）科技有限公司欢迎您！</h2>
-                    <div >
+                    <div class="item_list">
                         <div class="col-md-3 col-sm-6 col-xs-6 i-c-item-outer">
-                            <div class="i-c-item">本周销量<span>4368</span></div>
+                            <div class="i-c-item i-c-item1">本周销量<span>4368</span></div>
                         </div>
                         <div class="col-md-3 col-sm-6 col-xs-6 i-c-item-outer">
-                            <div class="i-c-item">本周销量<span>4368</span></div>
+                            <div class="i-c-item i-c-item2">本周销量<span>4368</span></div>
                         </div>
                         <div class="col-md-3 col-sm-6 col-xs-6 i-c-item-outer">
-                            <div class="i-c-item">本周销量<span>4368</span></div>
+                            <div class="i-c-item i-c-item3">本周销量<span>4368</span></div>
                         </div>
                         <div class="col-md-3 col-sm-6 col-xs-6 i-c-item-outer">
-                            <div class="i-c-item">本周销量<span>4368</span></div>
+                            <div class="i-c-item i-c-item4">本周销量<span>4368</span></div>
+                        </div>
+                    </div>
+
+                    <div class="chart">
+                        <div class="chart_list">
+                            <p class="hover">本月发卡统计</p>
+                            <p>本月消费统计</p>
+                        </div>
+                        <div>
+                            <img src="images/chart_pic.jpg"/>
                         </div>
                     </div>
                 </div>
@@ -88,6 +97,21 @@
         </div>
     </div>
 </section>
+<!--底部-->
+<footer>
+    <div class="container">
+        <p>2012-2016 爱刷（北京）科技有限公司（aishuapay.com）版权所有 京ICP备14052897号-2</p>
+    </div>
+</footer>
+<!-- 注销 modal -->
+<div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+    <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+            <P>是否注销此账户</P>
+
+        </div>
+    </div>
+</div>
 </body>
 
 </html>
