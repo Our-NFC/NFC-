@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>参数配置修改参数</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <!--[if lt IE 9]>
+    <script src="js/respond.min.js"></script>
+    <!--<![endif]&ndash;&gt;-->
+</head>
+<body>
+<!--头部-->
+<header class="nfc_sbanner">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-11 col-sm-10 col-xs-10">
+                <div class="nfc_slogo">
+                    <a href="#">
+                        <img class="" src="images/NFC_LOGO.png"/>
+                        <span>开发者平台</span>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-1 col-sm-2 col-xs-2 nfc_logoff">
+                <a href="#" class="btn btn-border active" data-toggle="modal" data-target=".bs-example-modal-sm"
+                   role="button">注销</a>
+            </div>
+        </div>
+    </div>
+</header>
+<!--中间部分-->
+<section class="content-wrap">
+    <div class="container">
+        <div class="row">
+            <aside class="col-md-3 sidebar">
+                <div class="sidenav">
+                    <div class="post-head">
+                        <img src="images/user_header.png"/><br>
+
+                        <P> 服务状态:<span>正常</span></P>
+                    </div>
+                    <div class="list_approve">
+                        <ul>
+                            <li class="col-md-4 col-sm-4 col-xs-4 li_1"><a href="#"><img
+                                    src="images/approve_ico1.png"><span>认证</span></a></li>
+                            <li class="col-md-4 col-sm-4 col-xs-4 li_2"><a href="#"><img
+                                    src="images/approve_ico2.png"><span>消息</span></a></li>
+                            <li class="col-md-4 col-sm-4 col-xs-4 li_3"><a href="#"><img
+                                    src="images/approve_ico3.png"><Span>安全</Span></a></li>
+                        </ul>
+                    </div>
+                    <div class="list_nav">
+                        <ul>
+                            <li class="hover"><a href="shops_index.html"><span class="glyphicon glyphicon-home"></span>首页</a></li>
+                            <li><a href="shops_cardprofile.html"><span class="glyphicon glyphicon-folder-close"></span>卡券概况</a></li>
+                            <li><a href="shops_cardcount.html"><span class="glyphicon glyphicon-credit-card"></span>发卡统计</a></li>
+                            <li><a href="#"><span class="glyphicon glyphicon-file"></span>API文档</a></li>
+                            <li><a href="shops_setting.html"><span class="glyphicon glyphicon-list"></span>参数设置</a></li>
+                            <li><a href="#"><span class="glyphicon glyphicon-cog"></span>系统设置</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </aside>
+            <!--右側內容-->
+            <main class="col-md-9 main-content">
+                <div class="main_wicket shops_seting">
+                    <h2>>参数配置>>修改参数</h2>
+                    <p class="p_updataitem">请填写接口配置信息，此信息需要你拥有自己的服务器资源。<br>
+                        填写的URL需要正确响应微信发送的Token验证，请阅读接入指南。</p>
+                    <form class="form-horizontal seting_updataform">
+                        <div class="form-group">
+                            <label for="inputurl" class="col-sm-3 control-label title_label">URL</label>
+                            <div class="col-sm-7">
+                                <input type="text" class="form-control" id="inputurl" placeholder="">
+                                <label class="lb_shiyi">必须以http://或https://开头，分别支持80端口和443端口</label>
+                            </div>
+                            <div class="col-sm-2">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="Token" class="col-sm-3 control-label title_label">Token</label>
+                            <div class="col-sm-7">
+                                <input type="text" class="form-control" id="Token" placeholder="">
+                                <label class="lb_shiyi">必须为英文或数字，长度为3-32字符。<a href="#">什么是Token ？</a> </label>
+                            </div>
+                            <div class="col-sm-2">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="EncodingAESKey" class="col-sm-3 control-label title_label">EncodingAESKey</label>
+                            <div class="col-sm-7">
+                                <input type="text" class="form-control" id="EncodingAESKey" placeholder="">
+                                <label class="lb_shiyi">消息加密密匙由43位字符组成，可随机修改，字符范围A-Z，a-z，0-9</label><br/>
+                                <label class="lb_shiyi"><a href="#">什么是EncodingAESKey?</a></label>
+                            </div>
+                            <div class="col-sm-2 btn_sjsc">
+                                <a href="#" class="btn btn-default">随机生成</a>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="EncodingAESKey" class="col-sm-3 control-label title_label">消息加解密方式</label>
+                            <div class="col-sm-9">
+                                <label class="title_label" style="margin-top: 5px;">请根据业务需要，选择消息加解密类型，启用后将立即生效</label>
+                                <div class="radio">
+                                    <label>
+                                        <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+                                        <label class="lb_rado1">明文模式</label><br/>
+                                        <label class="lb_rado2">明文模式下，不使用消息体加解密功能，安全系数低</label>
+                                    </label>
+                                </div>
+                                <div class="radio">
+                                    <label>
+                                        <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+                                        <label class="lb_rado1">兼容模式</label><br/>
+                                        <label class="lb_rado2">兼容模式下，明文、密文讲共存，方便开发者调试和维护</label>
+                                    </label>
+                                </div>
+                                <div class="radio">
+                                    <label>
+                                        <input type="radio" name="optionsRadios" id="optionsRadios3" value="option2">
+                                        <label class="lb_rado1">安全模式（推荐）</label><br/>
+                                        <label class="lb_rado2">安全模式下，消息包为纯密文，需要开发者加密和解密，安全系数高</label>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-offset-3 col-sm-7">
+                                <button type="submit" class="btn btn-primary btn_keep">保存</button>
+                            </div>
+                        </div>
+                    </form>
+
+
+                </div>
+
+            </main>
+        </div>
+    </div>
+</section>
+<!--底部-->
+<footer>
+    <div class="container">
+        <p>2012-2016 爱刷（北京）科技有限公司（aishuapay.com）版权所有 京ICP备14052897号-2</p>
+    </div>
+</footer>
+</body>
+</html>
