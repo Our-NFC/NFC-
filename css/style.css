@@ -1,5 +1,6 @@
 a:link,a:visited,a:hover,a:active{text-decoration: none;}
 ul ,li{padding:0;margin: 0; list-style: none;}
+/*头部*/
 .nfc_sbanner{background: url(../images/top_bannerbg.png) repeat-x; border: none; height: 154px;}
 .nfc_sbanner a{color: #fff;}
 .nfc_sbanner a:visited,.nfc_sbanner a:hover,.nfc_sbanner a:active{color: #fff;}
@@ -31,7 +32,7 @@ ul ,li{padding:0;margin: 0; list-style: none;}
 .item_list{height: auto;overflow: hidden}
 .i-c-item-outer{margin-top: 68px;}
 .i-c-item{padding:30px 10px 55px; color: #fff;font-size: 20px;text-align: center}
-.i-c-item span{display: block;font-size: 36px;}
+.i-c-item-outer .i-c-item span{display: block;font-size: 36px;}
 .i-c-item1{background: #d9544f}
 .i-c-item2{background: #418bca}
 .i-c-item3{background: #15a186}
@@ -40,6 +41,80 @@ ul ,li{padding:0;margin: 0; list-style: none;}
 .main_wicket .chart_list{border-bottom: 1px solid #ccc;height:70px;}
 .main_wicket .chart_list p{float:left;font-size: 22px;color: #333;margin: 0 15px;padding: 5px;}
 .main_wicket .chart_list p.hover{color: #333;background: #fbde80;border-radius: 5px;}
+footer{background: #f5f5f5;}
 footer p{text-align: center;font-size: 14px;color: #333;margin-top: 10px;}
+/*首页注销模态框*/
+.bs-example-modal-sm{top:50%;margin-top:-71px;}
+.logooff_modal{width:270px; height: 200px; background: #000000;opacity: 0.7;text-align: center; color: #fff}
+.logooff_modal .p_info{margin-top:55px;font-size: 16px;}
+.modal_select{margin-top:75px;font-size: 16px; padding: 0px;}
+.modal_select a{color:#fff;}
+.modal_select .btn_left{float: left;border-right: 1px solid #ccc;width: 50%; text-align: center;height:45px; line-height: 45px;}
+.modal_select .btn_right{float:right; text-align: center; width: 50%;line-height: 45px;}
+/*发卡统计*/
+.main_wicket h2.h2_black{color: #333;margin-top: 15px;}
+.i-c-item-outer1{margin-top:30px;}
+.i-c-item-outer1 .i-c-item .p1{font-size: 36px;margin-top: 5px;}
+.i-c-item-outer1 .i-c-item .p2{font-size: 20px; text-align: left;margin-left:25%; }
+.i-c-item-outer1 .glyphicon{color:#3ae27d;font-size: 15px;width: 15px;}
+.i-c-item-outer1 .i-c-item{padding:10px 10px 5px;}
+.main_wicket .chart_list p.p_right{float: right;}
+.main_wicket .chart_list p.p_right span{color:#333;}
+h2.card_listh2{float:left; }
+.card_listback{float:right;margin-right:6%;}
+.card_listback a{display: block;color: #fff;padding:8px 15px;font-size: 18px; background: #418bca;}
+.tb_cardlist{border: 1px solid #ccc; width: 90%;margin:30px auto 15px;}
+.tb_cardlist .td_right{text-align: right;}
+.tb_cardlist .theader{background: #4894cf; color:#fff;}
+.tb_cardlist .theader input{background: #4894cf;font-size:16px;font-weight:normal;width: 90px; border: none;}
+.tb_cardlist .theader .down_table{ border-left: 1px solid #fff; text-align: center}
+.tb_cardlist .theader .down_table a{color:#fff;  display: block;}
+.nav_page{text-align: center;}
+/*参数配置*/
+.shops_seting{padding: 64px 50px 0;min-height:790px;}
+.shops_seting h2{padding: 0}
+.shops_seting .p_items1{font-size: 22px; color: #666;margin-top:30px;clear:both;}
+.shops_seting .p_items2{font-size: 16px;color: #999}
+.shops_seting .p_items2 span{color:#333;margin-left: 10px;}
+.shops_seting .p_items2 a{color:#6699cc;}
+.shops_seting .p_items2 a:hover{color:#3475b7;}
+.shops_seting .items_btn{float: right;height:60px;}
+.shops_seting .items_btn a{padding:10px; width: 160px;}
+.shops_seting .items_border{font-size: 16px;color: #999;border:1px solid #999;padding:32px 25px;margin-bottom: 20px;}
+.shops_seting .p_updataitem{font-size: 16px;color: #999;margin-top: 35px;}
+.seting_updataform{margin-top: 10px;}
+.seting_updataform .title_label{font-size: 18px; color: #333;text-align: left;}
+.seting_updataform .lb_shiyi{font-size: 14px; color: #999;font-weight: normal;}
+.seting_updataform .btn_sjsc{margin-left: -25px;}
+.seting_updataform .btn_sjsc a{color:#3475b7}
+.seting_updataform .lb_rado1{font-size: 18px; color: #333;margin-top: 5px;}
+.seting_updataform .lb_rado2{font-size: 14px; color: #999;}
+.seting_updataform .radio input[type=radio]{width: 28px;height:28px;}
+.seting_updataform .btn_keep{width: 200px;height: 43px;margin-top: 20px;font-size: 18px;}
+/*卡券概况*/
+.shops_cardprofile{padding: 64px 50px 0;min-height:790px;}
+.shops_cardprofile h2{padding: 0}
+.cardprofile_form1{margin-top: 10px; height: auto;overflow: hidden;}
+.cardprofile_form1 .input_date{margin-top: 10px;}
+.cardprofile_form1 .btn_select{width: 510px; font-size: 20px;margin-top: 23px; font-size: 20px; border: none;}
+.cardprofile_form1 .btn_createcard { background: #15a186; font-size:30px;color: #fff;border: none;margin-top: 10px; padding: 25px 0; display: block}
+.cardprofile_form1 .btn_createcard:hover{background: #06967a;}
+.cardprofile_form1 .btn_createcard span{font-weight:100;margin-right: 5px;}
+.tb_cardprofile{margin-top: 70px; text-align: center;font-size: 16px;}
+.tb_cardprofile thead{background: #4894cf;color: #fff;font-weight: bolder;}
+.tb_cardprofile a{color: #f83636;padding: 0 5px;}
+.cardprofile_modal{top:40%;margin-top: -70px;}
+.cardprofile_modal .push_modal{width: 270px; height: 140px;  background: #000000;opacity: 0.7;text-align: center;}
+.cardprofile_modal .p_info{color:red; font-size: 18px; font-weight: bolder;margin-top:30px;}
+.cardprofile_modal .p_sure{color: #fff;font-size: 18px;margin-top: 10px;}
+.cardprofile_modal .p_sure span{color: #15a186;font-size:20px;margin-right: 15px;}
 
-.bs-example-modal-sm{}
+
+
+
+
+
+
+
+
+
