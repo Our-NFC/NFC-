@@ -1,4 +1,5 @@
 .clear{clear: both;}
+.h70{height: 70px;width: 100%;display: block;clear: both;}
 .g-headbg{position: absolute;z-index: -1;top: 0;}
 .g-head{width: 100%;height: 154px;background: #2F5282;opacity: 0.6;position: absolute;top: 0;left: 0;right: 0;}
 .g-banner{background: url("../images/gbanner.png") no-repeat;background-size: cover;}
@@ -19,7 +20,8 @@
 .g-toolOneList img{width: 100%;}
 .g-toolOneList p{font-size: 30px;line-height: 60px;}
 .g-toolOneList span{font-size: 24px;}
-.g-toolOneFooter{margin-top: 80px;height: 96px;width: 100%;background: #4c4c4c;}
+.g-content{margin-bottom: 80px;}
+.g-toolOneFooter{height: 96px;width: 100%;background: #4c4c4c;}
 .g-toolOneFooter p{text-align: center;font-size: 14px;color: #fff;line-height: 96px;}
 .g-second{margin-top: 80px;display: none;}
 .g-second h3{font-size: 30px;margin-bottom: 50px;}
@@ -31,3 +33,39 @@
 .g-thirdList .g-thirdPostionImg{position: relative;bottom: -30px;}
  /*index_toolone.css*/
 
+/*sign_step.css*/
+.g-headsign{background: #3475B7;}
+.g-stepMain{padding-top: 70px;}
+.g-fristStep h3{color: #3475b7;font-size: 30px;text-align: center;}
+.g-stepLine{margin: 50px 0;}
+.g-fristPoint{width: 15px;height: 15px;border-radius: 50%;background: #cccccc;position: absolute;left: 0;}
+.g-secondLine{width: 50%;height: 5px;background: #cccccc;float: left;margin-top: 5px;}
+.g-secondPoint{width: 15px;height: 15px;border-radius: 50%;background: #cccccc;position: absolute;left: 50%;margin-left: -8px;}
+.g-thirdPoint{width: 15px;height: 15px;border-radius: 50%;background: #cccccc;position: absolute;left: 100%;margin-left: -15px;}
+.g-pointActive{background:#3475b7; }
+.g-fristStepPact h4{font-size: 24px;float: left}
+.g-fristStepPact a{display: block;text-decoration: none;font-size: 24px;color: #3475b7;float: right;margin-top: 10px;}
+.g-fristStepIcon{margin: 70px 0;}
+.g-fristStep img{display: block;margin: 70px auto}
+.g-fristStep .checkbox label{font-size: 16px;}
+.g-fristStep a{text-decoration: none;}
+.g-fristStep .g-fristStepBtn{background: #3475b7;font-size: 24px;color: #fff;width: 100%;line-height: 48px;margin: 60px auto 165px;display: block;}
+
+.g-secondStep h4{font-size: 18px;line-height: 36px;}
+.g-secondStep .g-secondStepForm{margin-top: 50px;}
+.g-secondStep .g-secondStepForm h4{color: #999;font-size: 24px;line-height: 48px;}
+.g-secondStepForm .form-horizontal .form-group label{font-size: 24px;}
+.g-secondStepForm .form-horizontal .form-group input{font-size: 24px;height: 44px;}
+.g-secondStepForm .form-horizontal{margin-bottom: 50px;}
+.g-secondStep h3{font-size: 24px;line-height: 48px;}
+.g-secondStep .radio-inline{font-size: 24px;padding-left: 30px;}
+.g-secondStep .radio-inline input{width: 23px;height: 23px;margin-left: -30px;}
+.g-secondStep textarea{font-size: 24px;width: 100%;}
+.g-secondStep .checkbox label{font-size: 16px;padding-left: 22px;}
+.g-secondStep .checkbox input{width: 15px;height: 15px;margin-left: -22px;}
+.stepTwoBtn a{text-decoration: none;}
+.stepTwoBtn .btnOne{float: left;background: #c58222;font-size: 24px;line-height: 48px;display: block;width: 48%;color: #fff;}
+.stepTwoBtn .btnTwo{float: right;font-size: 24px;line-height: 48px;display: block;width: 48%;background: #3475b7;color: #fff;}
+
+.g-thirdStep .g-stepThreeTip h3{text-align: center; font-size: 24px;line-height: 48px;float: left;display: block;}
+.g-thirdStep .g-stepThreeTip img{float: left;margin-top: 25px;display: block}
