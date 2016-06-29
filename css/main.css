@@ -11,7 +11,7 @@
 .jum{background: transparent;color: #fff;text-align: center;margin-top: 9px; }
 .g-bannerLastBg{width: 100%;height: 92px;background: #2F5282;opacity: 0.3;position: absolute;margin-top: 10%}
 .g-bannerLast{margin-top: 10%;}
-.g-lastBtn{text-align: center;font-size: 30px;line-height: 92px;color: #fff;}
+.g-lastBtn{text-align: center;font-size: 30px;line-height: 92px;color: #fff;cursor:pointer;}
 .g-lastBtn:hover{ background: #D6E3F1;color: #0C1926;}
 .g-active{background: #D6E3F1;color: #0C1926;}
 .g-toolOneMain{padding:0 100px 0;}
@@ -21,11 +21,13 @@
 .g-toolOneList span{font-size: 24px;}
 .g-toolOneFooter{margin-top: 80px;height: 96px;width: 100%;background: #4c4c4c;}
 .g-toolOneFooter p{text-align: center;font-size: 14px;color: #fff;line-height: 96px;}
-.g-second{margin-top: 80px;}
+.g-second{margin-top: 80px;display: none;}
 .g-second h3{font-size: 30px;margin-bottom: 50px;}
 .g-second p{display: block;background: url("../images/g-sprit.png");background-repeat: no-repeat;padding-left: 20px;font-size: 24px;background-position-y: 10px;}
-.g-third{margin-top: 40px;}
+.g-third{margin-top: 40px;display: none;}
 .g-thirdList{width: 18%;background: #dadada;padding-top: 30px;float: left;margin:0 1%;min-width: 169px;margin-top: 40px;}
 .g-thirdList img{margin: 0 auto;display: block;}
 .g-thirdList h3{font-size: 26px;text-align: center;min-height: 56px;}
 .g-thirdList .g-thirdPostionImg{position: relative;bottom: -30px;}
+ /*index_toolone.css*/
+
