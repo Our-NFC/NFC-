@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>参数配置</title>
+    <title>消息</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
     <script type="text/javascript" src="js/jquery.min.js"></script>
@@ -41,14 +41,13 @@
                 <div class="sidenav">
                     <div class="post-head">
                         <img src="images/user_header.png"/><br>
-
                         <P> 服务状态:<span>正常</span></P>
                     </div>
                     <div class="list_approve">
                         <ul>
                             <li class="col-md-4 col-sm-4 col-xs-4 li_1"><a href="#"><img
                                     src="images/approve_ico1.png"><span>认证</span></a></li>
-                            <li class="col-md-4 col-sm-4 col-xs-4 li_2"><a href="shops_message.html"><img
+                            <li class="col-md-4 col-sm-4 col-xs-4 li_2"><a href="#"><img
                                     src="images/approve_ico2.png"><span>消息</span></a></li>
                             <li class="col-md-4 col-sm-4 col-xs-4 li_3"><a href="#"><img
                                     src="images/approve_ico3.png"><Span>安全</Span></a></li>
@@ -57,10 +56,10 @@
                     <div class="list_nav">
                         <ul>
                             <li><a href="shops_index.html"><span class="glyphicon glyphicon-home"></span>首页</a></li>
-                            <li><a href="shops_cardprofile.html"><span class="glyphicon glyphicon-folder-close"></span>卡券概况</a></li>
+                            <li class="hover"><a href="shops_cardprofile.html"><span class="glyphicon glyphicon-folder-close"></span>卡券概况</a></li>
                             <li><a href="shops_cardcount.html"><span class="glyphicon glyphicon-credit-card"></span>发卡统计</a></li>
                             <li><a href="#"><span class="glyphicon glyphicon-file"></span>API文档</a></li>
-                            <li class="hover"><a href="shops_setting.html"><span class="glyphicon glyphicon-list"></span>参数设置</a></li>
+                            <li><a href="shops_setting.html"><span class="glyphicon glyphicon-list"></span>参数设置</a></li>
                             <li><a href="#"><span class="glyphicon glyphicon-cog"></span>系统设置</a></li>
                         </ul>
                     </div>
@@ -68,23 +67,12 @@
             </aside>
             <!--右側內容-->
             <main class="col-md-9 main-content">
-                <div class="main_wicket shops_seting">
-                    <h2>>参数配置</h2>
-                    <p class="p_items1">开发者ID</p>
-                    <P class="p_items2">AppID(应用ID)<span>wx52885cc69bc5eal</span></P>
-                    <p class="p_items2">AppSecret(应用密匙)<span><a href="#">显示密匙</a></span><span><a href="#">重置</a></span></p>
-                    <div class="items_btn">
-                        <a href="shops_settingupdata.html" class="btn btn-warning">修改配置</a>&nbsp;&nbsp;&nbsp;
-                        <a href="#" class="btn btn-primary">启用</a>
+                <div class="main_wicket shops_cardprofile">
+                    <h2>>消息</h2>
+                    <div class="no_message">
+                        <img src="images/message_ico.png"/><br/>
+                        暂无任何消息通知！
                     </div>
-                    <p class="p_items1">服务器配置（未启用）</p>
-                    <div class="items_border">
-                        启用并设置服务器配置后，用户发给公众号的消息以及开发者需要的事件推送，讲被微信转发到URL中
-                    </div>
-                    <P class="p_items2">URL(服务器地址)<span>未填写</span></P>
-                    <P class="p_items2">Token（令牌）<span>未填写</span></P>
-                    <P class="p_items2">EncodingAESKey(消息加解密密匙？) <span>未填写</span></P>
-                    <P class="p_items2">消息加解密方式<span>未填写</span></P>
                 </div>
             </main>
         </div>
@@ -112,5 +100,6 @@
         </div>
     </div>
 </div>
+
 </body>
 </html>

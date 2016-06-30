@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="css/style.css">
     <script type="text/javascript" src="js/jquery.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script src="js/shopsjs.js"></script>
     <!--[if lt IE 9]>
     <script src="js/respond.min.js"></script>
     <!--<![endif]&ndash;&gt;-->
@@ -47,7 +48,7 @@
                     <div class="list_approve">
                         <ul>
                             <li class="col-md-4 col-sm-4 col-xs-4 li_1"><a href="#"><img src="images/approve_ico1.png"><span>认证</span></a></li>
-                            <li class="col-md-4 col-sm-4 col-xs-4 li_2"><a href="#"><img src="images/approve_ico2.png"><span>消息</span></a></li>
+                            <li class="col-md-4 col-sm-4 col-xs-4 li_2"><a href="shops_message.html"><img src="images/approve_ico2.png"><span>消息</span></a></li>
                             <li class="col-md-4 col-sm-4 col-xs-4 li_3"><a href="#"><img src="images/approve_ico3.png"><Span>安全</Span></a></li>
                         </ul>
                     </div>
@@ -81,18 +82,21 @@
                             <div class="i-c-item i-c-item4">本周销量<span>4368</span></div>
                         </div>
                     </div>
-
                     <div class="chart">
                         <div class="chart_list">
-                            <p class="hover">本月发卡统计</p>
-                            <p>本月消费统计</p>
+                            <p class="hover"><a href="javascript:void(0)">本月发卡统计</a></p>
+                            <p><a href="javascript:void(0)">本月消费统计</a></p>
                         </div>
-                        <div>
-                            <img src="images/chart_pic.jpg"/>
+                        <div class="chart_count">
+                            <div class="chart_tongjipic" style="display: block">
+                                <div id="container1" style="min-width:700px;height:400px"></div>
+                            </div>
+                            <div class="chart_tongjipic">
+                                <div id="container2" style="min-width:700px;height:400px"></div>
+                            </div>
                         </div>
                     </div>
                 </div>
-
             </main>
         </div>
     </div>
@@ -119,6 +123,9 @@
         </div>
     </div>
 </div>
+<script type="text/javascript" src="http://cdn.hcharts.cn/highcharts/highcharts.js"></script>
+<script type="text/javascript" src="http://cdn.hcharts.cn/highcharts/exporting.js"></script>
+<script type="text/javascript" src="js/hichart.js"></script>
 </body>
 
 </html>
