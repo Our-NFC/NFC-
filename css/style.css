@@ -21,8 +21,8 @@ ul ,li{padding:0;margin: 0; list-style: none;}
 .list_approve ul li a{color: #333;}
 .list_nav{margin-top: 35px;}
 .list_nav ul{border-top: 1px solid #ccc}
-.list_nav ul li{padding: 22px 26px; font-size: 24px;border-bottom: 1px solid #ccc}
-.list_nav ul li a{color:#666}
+.list_nav ul li{ font-size: 24px;border-bottom: 1px solid #ccc}
+.list_nav ul li a{color:#666;display: block; padding: 22px 26px;}
 .list_nav ul li .glyphicon{font-size:20px;color:#666;margin-right: 5px;}
 .list_nav ul li.hover{background: #3b8d73;}
 .list_nav ul li.hover a,.list_nav ul li.hover .glyphicon{color:#fff;}
@@ -39,8 +39,10 @@ ul ,li{padding:0;margin: 0; list-style: none;}
 .i-c-item4{background: #3f4e63}
 .main_wicket .chart{margin-top: 88px; height: auto;}
 .main_wicket .chart_list{border-bottom: 1px solid #ccc;height:70px;}
-.main_wicket .chart_list p{float:left;font-size: 22px;color: #333;margin: 0 15px;padding: 5px;}
+.main_wicket .chart_list p{float:left;font-size: 22px;margin: 0 15px;padding: 5px;}
+.main_wicket .chart_list p a{color:#333;}
 .main_wicket .chart_list p.hover{color: #333;background: #fbde80;border-radius: 5px;}
+.main_wicket .chart_tongjipic{display: none;}
 footer{background: #f5f5f5;}
 footer p{text-align: center;font-size: 14px;color: #333;margin-top: 10px;}
 /*首页注销模态框*/
@@ -48,7 +50,7 @@ footer p{text-align: center;font-size: 14px;color: #333;margin-top: 10px;}
 .logooff_modal{width:270px; height: 200px; background: #000000;opacity: 0.7;text-align: center; color: #fff}
 .logooff_modal .p_info{margin-top:55px;font-size: 16px;}
 .modal_select{margin-top:75px;font-size: 16px; padding: 0px;}
-.modal_select a{color:#fff;}
+.modal_select a{color:#fff; display: block;}
 .modal_select .btn_left{float: left;border-right: 1px solid #ccc;width: 50%; text-align: center;height:45px; line-height: 45px;}
 .modal_select .btn_right{float:right; text-align: center; width: 50%;line-height: 45px;}
 /*发卡统计*/
@@ -96,7 +98,9 @@ h2.card_listh2{float:left; }
 .shops_cardprofile h2{padding: 0}
 .cardprofile_form1{margin-top: 10px; height: auto;overflow: hidden;}
 .cardprofile_form1 .input_date{margin-top: 10px;}
-.cardprofile_form1 .btn_select{width: 510px; font-size: 20px;margin-top: 23px; font-size: 20px; border: none;}
+.cardprofile_form1 .input_date div{padding:0}
+.cardprofile_form1 .input_date div.span_colmd{text-align: center;padding-top: 5px;}
+.cardprofile_form1 .btn_select{width: 100%;  font-size: 20px;margin-top: 23px; font-size: 20px; border: none;}
 .cardprofile_form1 .btn_createcard { background: #15a186; font-size:30px;color: #fff;border: none;margin-top: 10px; padding: 25px 0; display: block}
 .cardprofile_form1 .btn_createcard:hover{background: #06967a;}
 .cardprofile_form1 .btn_createcard span{font-weight:100;margin-right: 5px;}
@@ -108,6 +112,26 @@ h2.card_listh2{float:left; }
 .cardprofile_modal .p_info{color:red; font-size: 18px; font-weight: bolder;margin-top:30px;}
 .cardprofile_modal .p_sure{color: #fff;font-size: 18px;margin-top: 10px;}
 .cardprofile_modal .p_sure span{color: #15a186;font-size:20px;margin-right: 15px;}
+/*卡券概况添加卡券*/
+.cardadd_info{clear: both;padding-top: 15px;}
+.cardadd_left{background: url(../images/phone_pic.png) no-repeat;width: 298px;height: 595px;float:left;}
+.cardadd_left .card_bg{width: 277px; height: 258px; background: #00684d;margin-top: 72px;margin-left: -4px;border-radius: 5px; padding-top: 22px; color:#fff; text-align: center}
+.card_userlogo{width: 45px; height: 45px;margin:0 auto}
+.card_userlogo img{width: 45px; height: 45px;border-radius: 50%;}
+.card_name{font-size: 14px;margin-top: 10px;}
+.card_type{font-size: 24px;margin-top: 35px;}
+.card_data{font-size: 12px;margin-top: 60px;}
+.card_xqing,.card_xqinginfo{color: #ccc;margin:10px 20px;font-size: 12px;}
+.cardadd_right .card_info{font-size: 22px; color:#54a6e5;}
+.cardadd_right .control-label{color: #333;font-size: 18px;}
+.cardadd_right .input-file{position: relative; text-align: center; width: auto; color:#989898; margin-top: 15px;background: #eee;  border:1px solid #dbdbdb;  padding:10px 30px; }
+.cardadd_right .input-file input[type="file"]{ position: absolute; top: 0; right: 0; height:40px; opacity: 0;}
+.cardadd_right .p_load{margin-top: 10px; color: #666;font-size: 14px;}
+.cardadd_right .card_btn{padding:10px 60px;font-size: 20px;margin-right: 6px;}
+.div_showcolor{border:1px solid #ccc;background: #f0f0f0;width: 183px;height: 34px;}
+.picker {margin:0;padding:0;border:0;width:143px;height:32px;border-right:34px solid #00684d;line-height:32px;background: #f0f0f0;color: #999;font-size: 14px;text-align: center;}
+.no_message{width: 230px;color: #999;font-size: 24px;margin: 150px auto 0;text-align: center}
+
 
 
 

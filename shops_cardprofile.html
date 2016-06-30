@@ -42,14 +42,13 @@
                 <div class="sidenav">
                     <div class="post-head">
                         <img src="images/user_header.png"/><br>
-
                         <P> 服务状态:<span>正常</span></P>
                     </div>
                     <div class="list_approve">
                         <ul>
                             <li class="col-md-4 col-sm-4 col-xs-4 li_1"><a href="#"><img
                                     src="images/approve_ico1.png"><span>认证</span></a></li>
-                            <li class="col-md-4 col-sm-4 col-xs-4 li_2"><a href="#"><img
+                            <li class="col-md-4 col-sm-4 col-xs-4 li_2"><a href="shops_message.html"><img
                                     src="images/approve_ico2.png"><span>消息</span></a></li>
                             <li class="col-md-4 col-sm-4 col-xs-4 li_3"><a href="#"><img
                                     src="images/approve_ico3.png"><Span>安全</Span></a></li>
@@ -57,8 +56,8 @@
                     </div>
                     <div class="list_nav">
                         <ul>
-                            <li class="hover"><a href="shops_index.html"><span class="glyphicon glyphicon-home"></span>首页</a></li>
-                            <li><a href="shops_cardprofile.html"><span class="glyphicon glyphicon-folder-close"></span>卡券概况</a></li>
+                            <li><a href="shops_index.html"><span class="glyphicon glyphicon-home"></span>首页</a></li>
+                            <li class="hover"><a href="shops_cardprofile.html"><span class="glyphicon glyphicon-folder-close"></span>卡券概况</a></li>
                             <li><a href="shops_cardcount.html"><span class="glyphicon glyphicon-credit-card"></span>发卡统计</a></li>
                             <li><a href="#"><span class="glyphicon glyphicon-file"></span>API文档</a></li>
                             <li><a href="shops_setting.html"><span class="glyphicon glyphicon-list"></span>参数设置</a></li>
@@ -75,22 +74,27 @@
                         <div class="col-md-8">
                             <input type="text" class="form-control" id="inputurl" placeholder="请输入要查询的名称或类型">
                             <div class="input_date">
-                                <input type="text" value="2016-05-01"  class="form_datetime">&nbsp;至&nbsp;
-                                <input type="text" value="2016-06-28"  class="form_datetime">
+                                <div class="col-md-6">
+                                    <input type="text" value="2016-05-01"  class="form-control form_datetime">
+                                </div>
+                                <div class="col-md-1 span_colmd">至</div>
+                                <div class="col-md-5">
+                                    <input type="text" value="2016-06-28"  class="form-control form_datetime">
+                                </div>
                                 <script type="text/javascript">
                                     $(function () {
                                         $('.form_datetime').datetimepicker({
-　　                                    minView: "month", //选择日期后，不会再跳转去选择时分秒
+　　                                        minView: "month", //选择日期后，不会再跳转去选择时分秒
                                         　　format: "yyyy-mm-dd", //选择日期后，文本框显示的日期格式
                                         　　autoclose:true //选择日期后自动关闭
-                                    });
+                                       });
                                     });
                                 </script>
                             </div>
                             <a  href="#" class="btn btn-primary btn_select">查询</a>
                         </div>
                         <div class="col-md-4">
-                            <a href="#" class="btn btn_createcard"><span class="glyphicon glyphicon-plus"></span>创建卡券</a>
+                            <a href="shops_cardprofileadd.html" class="btn btn_createcard"><span class="glyphicon glyphicon-plus"></span>创建卡券</a>
                         </div>
                     </form>
                     <table class="table table-hover table-bordered tb_cardprofile">
@@ -190,6 +194,22 @@
         <p>2012-2016 爱刷（北京）科技有限公司（aishuapay.com）版权所有 京ICP备14052897号-2</p>
     </div>
 </footer>
+<!-- 注销 modal -->
+<div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+    <div class="modal-dialog modal-sm">
+        <div class="modal-content logooff_modal">
+            <P class="p_info">是否注销此账户?</P>
+            <div class="modal-footer modal_select">
+                <div class="btn_left">
+                    <a href="#" data-dismiss="modal">否</a>
+                </div>
+                <div class="btn_right">
+                    <a href="#">是</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 <!--发布 modal -->
 <div class="modal fade cardprofile_modal bs-example-push" tabindex="-1" role="dialog" aria-labelledby="bs-example-push">
     <div class="modal-dialog modal-sm">
