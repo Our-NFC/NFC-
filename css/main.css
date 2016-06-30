@@ -1,5 +1,9 @@
 .clear{clear: both;}
+.h10{height: 10px;width: 100%;display: block;clear: both;}
+.h40{height: 40px;width: 100%;display: block;clear: both;}
+.h60{height: 60px;width: 100%;display: block;clear: both;}
 .h70{height: 70px;width: 100%;display: block;clear: both;}
+.h170{height: 170px;width: 100%;display: block;clear: both;}
 .g-headbg{position: absolute;z-index: -1;top: 0;}
 .g-head{width: 100%;height: 154px;background: #2F5282;opacity: 0.6;position: absolute;top: 0;left: 0;right: 0;}
 .g-banner{background: url("../images/gbanner.png") no-repeat;background-size: cover;}
@@ -67,5 +71,24 @@
 .stepTwoBtn .btnOne{float: left;background: #c58222;font-size: 24px;line-height: 48px;display: block;width: 48%;color: #fff;}
 .stepTwoBtn .btnTwo{float: right;font-size: 24px;line-height: 48px;display: block;width: 48%;background: #3475b7;color: #fff;}
 
-.g-thirdStep .g-stepThreeTip h3{text-align: center; font-size: 24px;line-height: 48px;float: left;display: block;}
-.g-thirdStep .g-stepThreeTip img{float: left;margin-top: 25px;display: block}
+.g-thirdStep .g-stepThreeTip{width: 240px;margin: 0 auto;}
+.g-thirdStep .g-stepThreeTip h3{text-align: center; font-size: 24px;line-height: 48px;float: left;display: block;margin-left: 30px;}
+.g-thirdStep .g-stepThreeTip img{float: left;margin-top: 25px;display: block;}
+.g-thirdStep img{display: block;margin: 0 auto;}
+.g-thirdStep a{text-decoration: none;}
+.g-thirdStep .g-stepThreeBtn{width: 100%;background: #3475b7;font-size: 24px;line-height: 48px;color: #fff;margin-bottom: 160px;}
+
+.g-signChoose{cursor: pointer;text-align: center;color: #3475b7;font-size: 32px;line-height: 64px;border-bottom: 5px solid #ccc;}
+.g-signChooseActive{border-bottom: 5px solid #3475b7;}
+.g-signIndexForm label{font-size: 24px;line-height: 48px;}
+.g-signIndexForm input{height: 44px;font-size: 24px;}
+.g-signIndexHead a{text-decoration: none;color: #3475b7;font-size: 16px;line-height: 32px;}
+.g-submitBtn button{background: #3475b7;font-size: 24px;color: #fff;width: 100%;line-height: 48px;border-radius: 4px;border: none;}
+.g-stepCheckbox label{font-size: 16px;}
+.g-stepCheckbox input{width: 15px;height: 15px;}
+.g-signIndexHead h5{font-size: 16px;line-height: 32px;text-align: center;}
+.g-signIndexHead h5 a{text-decoration: none;color: #3475b7;}
+.g-signIndexForm .g-signArea{width: 18%;float: left;height: 44px;font-size: 24px;}
+.g-signIndexForm .g-signNumber{width: 78%;float: right;}
+.g-signIndexForm .g-signCodes{float: left;width: 62%;}
+.g-signIndexForm .g-signCodesBtn{float: right;width: 34%;background: #eeeeee;}
