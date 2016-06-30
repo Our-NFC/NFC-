@@ -1,5 +1,6 @@
 .clear{clear: both;}
 .h10{height: 10px;width: 100%;display: block;clear: both;}
+.h30{height: 30px;width: 100%;display: block;clear: both;}
 .h40{height: 40px;width: 100%;display: block;clear: both;}
 .h60{height: 60px;width: 100%;display: block;clear: both;}
 .h70{height: 70px;width: 100%;display: block;clear: both;}
@@ -93,3 +94,11 @@
 .g-signIndexForm .g-signNumber{width: 78%;float: right;}
 .g-signIndexForm .g-signCodes{float: left;width: 62%;}
 .g-signIndexForm .g-signCodesBtn{float: right;width: 34%;background: #eeeeee;}
+.g-signIndexForm h4{font-size: 18px;color: #666;}
+.g-stepMain h2{text-align: center;color: #3475b7;font-size: 32px;}
+.g-submitBtn .modal-content{padding: 50px 30px;}
+.resectModalOk{width: 135px;margin: 0 auto;}
+.resectModalOk img{width: 20px;margin-right: 10px;margin-top: -5px;}
+.resectModalOk span{font-size: 16px;line-height: 32px;}
+.resectModalCont{margin-top: 80%;opacity: 0.8;}
+.resectModalCont a{text-decoration: none;display: block;text-align: center;font-size: 16px;color: #3475b7;}
