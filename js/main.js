@@ -24,20 +24,20 @@ $(function(){
         })
     })
 });
-
+/*倒计时*/
 $(function(){
     var signCodesBtn=$("#g-signCodesBtn");
     var c=60;
     var t;
     signCodesBtn.on("click",function(){
-        timedCount();
+        timer();
     });
-    function timedCount()
+    function timer()
     {
         signCodesBtn.attr("disabled","true");
         signCodesBtn.val(c+"s");
         c--;
-        t=setTimeout(timedCount,1000);
+        t=setTimeout(timer,1000);
         if(c<0){
             clearTimeout(t);
             signCodesBtn.val("重试");
@@ -45,4 +45,22 @@ $(function(){
             c=60;
         }
     }
+});
+/*倒计时*/
+
+$(function(){
+    /*登录验证*/
+    $("#g-signIndexForm").validator({
+        rules:{
+            loginName: function(element) {
+                return this.test(element, "mobile")===true ||
+                    this.test(element, "email")===true ||
+                    '请填写正确的电子邮箱或手机号！';
+            },
+        },
+        fields:{
+            loginName:"required;loginName",
+            password:"required;password"
+        },
+    });
 });

@@ -7,7 +7,10 @@
 <title>NFC+开发者平台</title>
 <link rel="stylesheet" href="css/bootstrap.min.css">
 <link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="js/validator/jquery.validator.css">
 <script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/validator/jquery.validator.min.js"></script>
+<script type="text/javascript" src="js/validator/local/zh-CN.js"></script>
 <script type="text/javascript" src="js/bootstrap.min.js"></script>
 <script type="text/javascript" src="js/main.js"></script>
 <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -31,7 +34,7 @@
 </div>
 <div class="container g-stepMain">
     <div class="row">
-        <div class="g-signIndexHead col-xs-8 col-sm-8 col-sm-offset-2 col-xs-offset-2">
+        <div class="g-signIndexHead col-xs-8 col-sm-8 col-md-6 col-md-offset-3 col-sm-offset-2 col-xs-offset-2">
             <div class="row">
                 <div class="col-xs-6 col-sm-6 g-signChoose g-signChooseActive">登录</div>
                 <div class="col-xs-6 col-sm-6 g-signChoose ">手机验证码登录</div>
@@ -39,17 +42,19 @@
         </div>
     </div>
     <div class="row">
-        <div class="g-signIndexHead signheadshow col-xs-8 col-sm-8 col-sm-offset-2 col-xs-offset-2 ">
+        <div class="g-signIndexHead signheadshow col-xs-8 col-sm-8 col-md-6 col-md-offset-3 col-sm-offset-2 col-xs-offset-2 ">
             <div class="row">
                 <div class="h60"></div>
-                <form class="g-signIndexForm">
+                <form class="g-signIndexForm" id="g-signIndexForm">
                     <div class="form-group">
                         <label>电子邮箱/手机号</label>
-                        <input type="text" class="form-control"  placeholder="">
+                        <input type="text" class="form-control" name="loginName"  placeholder="">
+                        <span class="msg-box" for="loginName"></span>
                     </div>
                     <div class="form-group">
                         <label>密码</label>
-                        <input type="text" class="form-control" placeholder="">
+                        <input type="text" class="form-control" name="password" placeholder="">
+                        <span class="msg-box" for="password"></span>
                     </div>
                 </form>
                 <div class="h10"></div>
@@ -71,7 +76,7 @@
                 <div class="h60"></div>
             </div>
         </div>
-        <div class="g-sign signheadshow col-xs-8 col-sm-8  col-sm-offset-2 col-xs-offset-2">
+        <div class="g-sign signheadshow col-xs-8 col-sm-8 col-md-6 col-md-offset-3  col-sm-offset-2 col-xs-offset-2">
             <div class="h60"></div>
             <div class="row">
                 <form class="g-signIndexForm">
