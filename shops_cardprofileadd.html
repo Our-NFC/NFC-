@@ -154,7 +154,12 @@
                                </div>
                                <div class="form-group">
                                    <div class="col-sm-12">
-                                       <button type="button"  data-toggle="modal" data-target=".bs-cardprofile-keep" class="btn btn-warning card_btn">保存卡券</button>
+                                       <p class="error_info"><span class="glyphicon glyphicon-remove"></span>商家名称不能为空</p>
+                                   </div>
+                               </div>
+                               <div class="form-group">
+                                   <div class="col-sm-12">
+                                       <button type="button"  class="btn btn-warning card_btn">保存卡券</button>
                                        <button type="button" class="btn btn-primary card_btn">保存并发布</button>
                                    </div>
                                </div>
@@ -189,7 +194,7 @@
     </div>
 </div>
 <!--保存卡券 modal -->
-<div class="modal fade cardprofile_modal bs-cardprofile-keep" tabindex="-1" role="dialog" aria-labelledby="bs-cardprofile-keep">
+<div class="modal fade cardprofile_modal bs-cardprofile-keep" tabindex="-1" role="dialog" aria-labelledby="bs-cardprofile-keep" aria-hidden="true">
     <div class="modal-dialog modal-sm">
         <div class="modal-content push_modal">
             <P class="p_info">提示</P>
