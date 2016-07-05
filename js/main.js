@@ -46,11 +46,19 @@ $(function(){
         }
     }
 });
-/*倒计时*/
 //阅读开发者协议后勾选同意可点击下一步
 $(function(){
-    var checked=$(".g-stepCheckbox input");
-
+    var checked=$(".g-fristStep .g-stepCheckbox input");
+    checked.on("click",function(){
+       if(this.checked==true){
+           $(".g-fristStep .g-stepThreeBtn").removeAttr("disabled");
+           console.log("已经勾选了");
+       }
+        else{
+           $(".g-fristStep .g-stepThreeBtn").attr("disabled","true");
+           console.log("还没有");
+       }
+    });
 });
 $(function(){
     //登录验证
@@ -60,7 +68,7 @@ $(function(){
                 return this.test(element, "mobile")===true ||
                     this.test(element, "email")===true ||
                     '请填写正确的电子邮箱或手机号！';
-            },
+            }
         },
         fields:{
             loginName:{
@@ -71,8 +79,8 @@ $(function(){
                 rule:"required;password",
                 msg: {required: "请填写密码！"},
                 tip:"密码由6-20位数字、字母或下划线组成！"
-            },
-        },
+            }
+        }
     });
 
     //手机号码登录验证
@@ -152,3 +160,4 @@ $(function(){
         }
     });
 });
+
