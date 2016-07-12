@@ -7,7 +7,10 @@
 <title>NFC+开发者平台</title>
 <link rel="stylesheet" href="css/bootstrap.min.css">
 <link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="js/validator/jquery.validator.css">
 <script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/validator/jquery.validator.min.js"></script>
+<script type="text/javascript" src="js/validator/local/zh-CN.js"></script>
 <script type="text/javascript" src="js/bootstrap.min.js"></script>
 <script type="text/javascript" src="js/main.js"></script>
 <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -31,12 +34,13 @@
 </div>
 <div class="container g-stepMain">
     <div class="row">
-        <div class="g-signIndexHead col-xs-8 col-sm-8 col-sm-offset-2 col-xs-offset-2">
+        <div class="g-signIndexHead col-xs-8 col-sm-8 col-md-6 col-md-offset-3 col-sm-offset-2 col-xs-offset-2">
             <div class="h60"></div>
-            <form class="g-signIndexForm">
+            <form class="g-signIndexForm" id="setPasswordForm">
                 <div class="form-group">
                     <label>该手机号未注册，请设置密码保障您的安全</label>
-                    <input type="text" class="form-control" placeholder="">
+                    <input type="text" class="form-control" name="passrord" placeholder="">
+                    <span class="msg-box" for="passrord"></span>
                 </div>
             </form>
             <div class="h60"></div>
