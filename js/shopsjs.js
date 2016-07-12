@@ -40,6 +40,20 @@
              }else{
                  $('.bs-cardprofile-keep').modal('show');
              }
+        });
+        //启用 停用
+        $(".star_using").click(function(){
+           var texts= $(this).html();
+            if(texts=="启用"){
+                $(this).addClass("btn-danger");
+                $(this).html("停用");
+                $(".test_ID").hide();
+            }else{
+                $(this).html("启用");
+                $(this).removeClass("btn-danger");
+                $(".test_ID").show();
+            }
+
         })
 
     })

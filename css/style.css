@@ -62,7 +62,7 @@ footer p{text-align: center;font-size: 14px;color: #333;margin-top: 10px;}
 .i-c-item-outer1 .i-c-item{padding:10px 10px 5px;}
 .main_wicket .chart_list p.p_right{float: right;}
 .main_wicket .chart_list p.p_right span{color:#333;}
-h2.card_listh2{float:left; }
+h2.card_listh2{float:left;}
 .card_listback{float:right;margin-right:6%;}
 .card_listback a{display: block;color: #fff;padding:8px 15px;font-size: 18px; background: #418bca;}
 .tb_cardlist{border: 1px solid #ccc; width: 90%;margin:30px auto 15px;}
@@ -132,13 +132,45 @@ h2.card_listh2{float:left; }
 .picker {margin:0;padding:0;border:0;width:143px;height:32px;border-right:34px solid #00684d;line-height:32px;background: #f0f0f0;color: #999;font-size: 14px;text-align: center;}
 .no_message{width: 230px;color: #999;font-size: 24px;margin: 150px auto 0;text-align: center}
 .cardadd_right .error_info{font-size: 18px; color:red; text-align: center;display: none;}
-
-
-
-
-
-
-
+/*运营日志*/
+.oprelog_h2{height:60px;}
+.tb_operlog .td_caozuo a{padding-right:10px;color:red }
+.operlogdetail{margin-top: 70px; color:#666;}
+.operlogdetail .p_error{font-size: 24px; text-align: center}
+.operlogdetail .p_info{font-size:14px;width: 652px;margin: 20px auto;}
+.operlogdetail .detail_btn{text-align: center;margin:40px 0;}
+.operlogdetail .detail_btn a{width: 200px; text-align: center;font-size: 20px;}
+.operlogdetail .detail_btn a .sp_ico{display:inline-block;padding-left:28px;margin-top:5px;background: url(../images/smile_ico.png) no-repeat left bottom; height:24px;}
+/*认证*/
+.approve{margin-top: 20px;}
+.approve table tr td{border:none}
+.approve table tr td .form-group{margin-bottom:5px; }
+.approve table tr td label{font-size: 16px;color: #999;font-weight: normal;}
+.approve table tr .td_title{font-size: 22px;color:#666;}
+.approve .input-file{position: relative;  margin-top: 15px;background:url(../images/file_ico.png) no-repeat;width: 136px;height: 144px;display: block}
+.approve .input-file input[type="file"]{ position: absolute; top: 0; right: 0; height:144px; opacity: 0;}
+.approve .td_file p{font-size: 16px;color: #999; line-height: 0}
+.approve .td_file aside{margin:15px 0;}
+.approve .btn_sumbit{text-align: center}
+.approve .btn_sumbit a{width: 200px; font-size: 20px;}
+/*密码*/
+.pasword_repair{margin-top:40px;}
+.pasword_repair label{font-size:20px; color: #333;font-weight: normal}
+.pasword_repair button{width: 200px;font-size: 20px;}
+/*错误页面*/
+.shops_error{text-align: center;}
+.shops_error p{font-size: 26px; color: #b4b4b4;margin: 25px 0}
+.shops_error .err_btn a{width: 200px; font-size: 20px;margin: 40px 0;}
+/*API文档*/
+.api_top{height: auto;overflow: hidden;}
+.api_top h2{float:left;}
+.api_test{color: #666;font-size: 14px;}
+.api_test .p1{font-size: 16px;}
+.api_test .p2{background: #f1fff1;padding:5px;}
+.api_test .div_square{background: #f1f1f1;border: 1px solid #ccc;margin-top:30px;padding: 20px;}
+.api_test .coltips{padding:5px 0 0 0;margin-left: -10px; font-size: 14px;color: #999}
+.api_test .coltips span{color:red}
+.api_test .btn_checkproblem{width: 200px;font-size: 20px;}
 
 
 

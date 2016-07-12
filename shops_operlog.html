@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>发卡统计用户列表</title>
+    <title>运营日志</title>
     <link rel="stylesheet" href="css/bootstrap.min.css"/>
     <link rel="stylesheet" href="css/style.css"/>
     <link rel="stylesheet" href="css/bootstrap-datetimepicker.min.css"/>
@@ -55,10 +55,10 @@
                         <ul>
                             <li><a href="shops_index.html"><span class="glyphicon glyphicon-home"></span>首页</a></li>
                             <li><a href="shops_cardprofile.html"><span class="glyphicon glyphicon-folder-close"></span>卡券概况</a></li>
-                            <li class="hover"><a href="shops_cardcount.html"><span class="glyphicon glyphicon-credit-card"></span>发卡统计</a></li>
+                            <li><a href="shops_cardcount.html"><span class="glyphicon glyphicon-credit-card"></span>发卡统计</a></li>
                             <li><a href="shops_api.html"><span class="glyphicon glyphicon-file"></span>API文档</a></li>
                             <li><a href="shops_setting.html"><span class="glyphicon glyphicon-list"></span>参数配置</a></li>
-                            <li><a href="shops_operlog.html"><span class="glyphicon glyphicon-indent-left"></span>运营日志</a></li>
+                            <li class="hover"><a href="shops_operlog.html"><span class="glyphicon glyphicon-indent-left"></span>运营日志</a></li>
                             <li><a href="#"><span class="glyphicon glyphicon-cog"></span>系统设置</a></li>
                         </ul>
                     </div>
@@ -67,71 +67,87 @@
             <!--右側內容-->
             <main class="col-md-9 main-content">
                 <div class="main_wicket">
-                    <h2 class="card_listh2">>发卡统计>>用户列表</h2>
-                    <P class="card_listback"><a href="shops_cardcount.html">返回</a> </P>
-                    <table class="table table-hover table-striped tb_cardlist">
+                    <h2 class="card_listh2 oprelog_h2">>运营日志</h2>
+                    <table class="table table-hover table-striped tb_cardlist tb_operlog">
                         <thead>
                         <tr class="theader">
-                            <th colspan="4">
-                                <input type="text" value="2016-05-01"  class="form_datetime">至&nbsp;
-                                <input type="text" value="2016-06-28"  class="form_datetime">
-                                <script type="text/javascript">
-                                    $(function () {
-                                        $('.form_datetime').datetimepicker({
-　　                                        minView: "month", //选择日期后，不会再跳转去选择时分秒
-                                        　　format: "yyyy-mm-dd", //选择日期后，文本框显示的日期格式
-                                        　　autoclose:true //选择日期后自动关闭
-                                    });
-                                    });
-                                </script>
-                            </th>
-                            <th class="down_table">
-                                 <a href="#">下载表格</a>
-                            </th>
+                            <th>请求时间</th>
+                            <th>请求地址</th>
+                            <th>操作状态</th>
                         </tr>
                         </thead>
                         <tbody>
                         <tr>
-                            <td>时间</td>
-                            <td class="td_right">被关注人数</td>
-                            <td class="td_right">取消被关注人数</td>
-                            <td class="td_right">净增关注人数</td>
-                            <td class="td_right">累计关注人数</td>
+                            <td>2016-06-28</td>
+                            <td>https://nfc.pqsuwen.com/mapi/main</td>
+                            <td class="td_caozuo">
+                                <a href="shops_operlogdetail.html">失败</a>
+                                <a href="#">清除日志</a>
+                                <a href="#">已解决</a>
+                            </td>
                         </tr>
                         <tr>
                             <td>2016-06-28</td>
-                            <td class="td_right">0</td>
-                            <td class="td_right">20</td>
-                            <td class="td_right">30</td>
-                            <td class="td_right">110</td>
+                            <td>https://nfc.pqsuwen.com/mapi/main</td>
+                            <td class="td_caozuo">
+                                <a href="shops_operlogdetail.html">失败</a>
+                                <a href="#">清除日志</a>
+                                <a href="#">已解决</a>
+                            </td>
                         </tr>
                         <tr>
                             <td>2016-06-28</td>
-                            <td class="td_right">0</td>
-                            <td class="td_right">20</td>
-                            <td class="td_right">30</td>
-                            <td class="td_right">110</td>
+                            <td>https://nfc.pqsuwen.com/mapi/main</td>
+                            <td class="td_caozuo">
+                                <a href="shops_operlogdetail.html">失败</a>
+                                <a href="#">清除日志</a>
+                                <a href="#">已解决</a>
+                            </td>
                         </tr>
                         <tr>
                             <td>2016-06-28</td>
-                            <td class="td_right">0</td>
-                            <td class="td_right">20</td>
-                            <td class="td_right">30</td>
-                            <td class="td_right">110</td>
+                            <td>https://nfc.pqsuwen.com/mapi/main</td>
+                            <td class="td_caozuo">
+                                <a href="shops_operlogdetail.html">失败</a>
+                                <a href="#">清除日志</a>
+                                <a href="#">已解决</a>
+                            </td>
                         </tr>
                         <tr>
                             <td>2016-06-28</td>
-                            <td class="td_right">0</td>
-                            <td class="td_right">20</td>
-                            <td class="td_right">30</td>
-                            <td class="td_right">110</td>
+                            <td>https://nfc.pqsuwen.com/mapi/main</td>
+                            <td class="td_caozuo">
+                                <a href="shops_operlogdetail.html">失败</a>
+                                <a href="#">清除日志</a>
+                                <a href="#">已解决</a>
+                            </td>
                         </tr>
                         <tr>
                             <td>2016-06-28</td>
-                            <td class="td_right">0</td>
-                            <td class="td_right">20</td>
-                            <td class="td_right">30</td>
-                            <td class="td_right">110</td>
+                            <td>https://nfc.pqsuwen.com/mapi/main</td>
+                            <td class="td_caozuo">
+                                <a href="shops_operlogdetail.html">失败</a>
+                                <a href="#">清除日志</a>
+                                <a href="#">已解决</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2016-06-28</td>
+                            <td>https://nfc.pqsuwen.com/mapi/main</td>
+                            <td class="td_caozuo">
+                                <a href="shops_operlogdetail.html">失败</a>
+                                <a href="#">清除日志</a>
+                                <a href="#">已解决</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2016-06-28</td>
+                            <td>https://nfc.pqsuwen.com/mapi/main</td>
+                            <td class="td_caozuo">
+                                <a href="shops_operlogdetail.html">失败</a>
+                                <a href="#">清除日志</a>
+                                <a href="#">已解决</a>
+                            </td>
                         </tr>
                         </tbody>
                     </table>

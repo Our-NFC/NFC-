@@ -4,12 +4,12 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>参数配置</title>
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/style.css">
+    <title>运营日志详情</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="css/bootstrap-datetimepicker.min.css"/>
     <script type="text/javascript" src="js/jquery.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="js/shopsjs.js"></script>
     <!--[if lt IE 9]>
     <script src="js/respond.min.js"></script>
     <!--<![endif]&ndash;&gt;-->
@@ -42,7 +42,6 @@
                 <div class="sidenav">
                     <div class="post-head">
                         <img src="images/user_header.png"/><br>
-
                         <P> 服务状态:<span>正常</span></P>
                     </div>
                     <div class="list_approve">
@@ -58,8 +57,8 @@
                             <li><a href="shops_cardprofile.html"><span class="glyphicon glyphicon-folder-close"></span>卡券概况</a></li>
                             <li><a href="shops_cardcount.html"><span class="glyphicon glyphicon-credit-card"></span>发卡统计</a></li>
                             <li><a href="shops_api.html"><span class="glyphicon glyphicon-file"></span>API文档</a></li>
-                            <li class="hover"><a href="shops_setting.html"><span class="glyphicon glyphicon-list"></span>参数配置</a></li>
-                            <li><a href="shops_operlog.html"><span class="glyphicon glyphicon-indent-left"></span>运营日志</a></li>
+                            <li><a href="shops_setting.html"><span class="glyphicon glyphicon-list"></span>参数配置</a></li>
+                            <li class="hover"><a href="shops_operlog.html"><span class="glyphicon glyphicon-indent-left"></span>运营日志</a></li>
                             <li><a href="#"><span class="glyphicon glyphicon-cog"></span>系统设置</a></li>
                         </ul>
                     </div>
@@ -67,34 +66,29 @@
             </aside>
             <!--右側內容-->
             <main class="col-md-9 main-content">
-                <div class="main_wicket shops_seting">
-                    <h2>>参数配置</h2>
-                    <div>
-                        <p class="p_items1">开发者ID</p>
-                        <P class="p_items2">AppID(应用ID)<span>wx52885cc69bc5eal</span></P>
-                        <p class="p_items2">AppSecret(应用密匙)<span><a href="#">显示密匙</a></span><span><a href="#">重置</a></span></p>
-                        <div class="items_btn">
-                            <a href="shops_settingupdata.html" class="btn btn-warning">修改配置</a>&nbsp;&nbsp;&nbsp;
-                            <a href="#" class="btn btn-primary star_using">启用</a>
+                <div class="main_wicket">
+                    <h2 class="card_listh2 oprelog_h2">>运营日志>>详情</h2>
+                    <P class="card_listback"><a href="shops_operlog.html">返回</a> </P>
+                    <div class="operlogdetail">
+                        <P class="p_error">
+                            <img src="images/error_dico.png">
+                            失败
+                        </P>
+                        <P class="p_info">
+                            请求参数字符串链接排序，A-Z排序加卡密匙MD5加密
+                            备注：密匙放置在请求Request Header  signature（卡密匙）：a22641417fbd87b76b25bbcaabc82731
+                        </P>
+                        <P class="p_info">
+                            MD5签名字符串示例
+                            待MD5签名字符串：appkey=0781F0CD5CA28464AD147F02AD8D09E4&cardNumber=1608
+                            509641502919&mouble=13811111211&3bb92c78cbe89c571e3ac7fb61cdfeffMD5签名后字符串:a22641
+                            417fbd87b76b25bbcaabc82731
+                        </P>
+                        <div class="detail_btn">
+                            <a href="#" class="btn btn-warning"><span class="sp_ico">未解决</span></a>&nbsp;&nbsp;&nbsp;
+                            <a href="#" class="btn btn-primary"><span class="sp_ico">已解决</span></a>
                         </div>
                     </div>
-                   <div class="test_ID">
-                       <p class="p_items1">测试开发ID</p>
-                       <P class="p_items2">AppID(应用ID)<span>wx52885cc69bc5eal</span></P>
-                       <p class="p_items2">AppSecret(应用密匙)<span><a href="#">显示密匙</a></span><span><a href="#">重置</a></span></p>
-                       <div class="items_btn">
-                           <a href="shops_settingupdata.html" class="btn btn-warning">修改配置</a>&nbsp;&nbsp;&nbsp;
-                           <a href="#" class="btn btn-success">测试</a>
-                       </div>
-                   </div>
-                    <p class="p_items1">服务器配置（未启用）</p>
-                    <div class="items_border">
-                        启用并设置服务器配置后，用户发给公众号的消息以及开发者需要的事件推送，讲被微信转发到URL中
-                    </div>
-                    <P class="p_items2">URL(服务器地址)<span>未填写</span></P>
-                    <P class="p_items2">Token（令牌）<span>未填写</span></P>
-                    <P class="p_items2">EncodingAESKey(消息加解密密匙？) <span>未填写</span></P>
-                    <P class="p_items2">消息加解密方式<span>未填写</span></P>
                 </div>
             </main>
         </div>
@@ -122,5 +116,6 @@
         </div>
     </div>
 </div>
+<script type="text/javascript" src="js/bootstrap-datetimepicker.min.js"></script>
 </body>
 </html>
