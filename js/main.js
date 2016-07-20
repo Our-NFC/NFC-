@@ -1,10 +1,18 @@
+$(function(){
+    var bower_height=document.body.scrollHeight ;
+    var doc_geight=$(document.body).outerHeight(true);
 
+});
 $(function(){
     var tab=$("#g-bannerLast .g-lastBtn");
     var contentShow=$("#g-content .g-contentMain");
     tab.each(function(i){
         $(this).on("mouseover",function(){
             $(this).addClass("g-active");
+            $(this).children().children(".g-imgActiveT").hide();
+            $(this).children().children(".g-imgActive").show();
+            tab.eq(i).siblings().children().children(".g-imgActiveT").show();
+            tab.eq(i).siblings().children().children(".g-imgActive").hide();
             $(this).siblings().removeClass("g-active");
             contentShow.eq(i).show();
             contentShow.eq(i).siblings().hide();

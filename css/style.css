@@ -1,3 +1,4 @@
+body{zoom: 0.75!important;}
 a:link,a:visited,a:hover,a:active{text-decoration: none;}
 ul ,li{padding:0;margin: 0; list-style: none;}
 /*头部*/
@@ -147,8 +148,9 @@ h2.card_listh2{float:left;}
 .approve table tr td .form-group{margin-bottom:5px; }
 .approve table tr td label{font-size: 16px;color: #999;font-weight: normal;}
 .approve table tr .td_title{font-size: 22px;color:#666;}
-.approve .input-file{position: relative;  margin-top: 15px;background:url(../images/file_ico.png) no-repeat;width: 136px;height: 144px;display: block}
-.approve .input-file input[type="file"]{ position: absolute; top: 0; right: 0; height:144px; opacity: 0;}
+.approve .input-file{position: relative;  margin-top: 15px;background:url(../images/file_ico.png) no-repeat;max-width: 100%; width: 136px;height: 144px;display: block}
+.approve .input-file input[type="file"]{ position: absolute; top: 0; right: 0;left:0;width: 136px; height:144px; opacity: 0;}
+.approve .input-file img{width: 136px;height: 144px;display: block;border:1px solid #ccc;}
 .approve .td_file p{font-size: 16px;color: #999; line-height: 0}
 .approve .td_file aside{margin:15px 0;}
 .approve .btn_sumbit{text-align: center}

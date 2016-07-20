@@ -1,3 +1,4 @@
+body{zoom: 0.75!important;}
 .clear{clear: both;}
 .h10{height: 10px;width: 100%;display: block;clear: both;}
 .h30{height: 30px;width: 100%;display: block;clear: both;}
@@ -20,6 +21,7 @@
 .g-lastBtn{text-align: center;font-size: 30px;line-height: 92px;color: #fff;cursor:pointer;}
 .g-lastBtn:hover{ background: #D6E3F1;color: #0C1926;}
 .g-active{background: #D6E3F1;color: #0C1926;}
+.g-imgActive{display: none;}
 .g-toolOneMain{padding:0 100px 0;}
 .g-toolOneList{margin-top: 80px;}
 .g-toolOneList img{width: 100%;}
@@ -40,7 +42,7 @@
 
 /*sign_step.css*/
 .g-headsign{background: #3475B7;}
-.g-stepMain{padding-top: 70px;}
+.g-stepMain{padding-top: 70px;min-height: 100vh;}
 .g-fristStep h3{color: #3475b7;font-size: 30px;text-align: center;}
 .g-stepLine{margin: 50px 0;}
 .g-fristPoint{width: 15px;height: 15px;border-radius: 50%;background: #cccccc;position: absolute;left: 0;}

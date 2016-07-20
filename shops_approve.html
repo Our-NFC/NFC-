@@ -173,37 +173,37 @@
                                                 <aside class="col-md-3">
                                                     <p>营业执照</p>
                                                     <a class="input-file" href="javascript:void(0);">
-                                                        <input type="file" name="file" id="file1" onchange="preview(this)"/>
+                                                        <input type="file" name="file1" id="file1"/>
                                                     </a>
                                                 </aside>
                                                 <aside class="col-md-3">
                                                     <p>税务登记证</p>
                                                     <a class="input-file" href="javascript:void(0);">
-                                                        <input type="file" name="file" id="file2" onchange="preview(this)"/>
+                                                        <input type="file" name="file2" id="file2" />
                                                     </a>
                                                 </aside>
                                                 <aside class="col-md-3">
                                                     <p>组织机构代码</p>
                                                     <a class="input-file" href="javascript:void(0);">
-                                                        <input type="file" name="file" id="file3" onchange="preview(this)"/>
+                                                        <input type="file" name="file3" id="file3" />
                                                     </a>
                                                 </aside>
                                                 <aside class="col-md-3">
                                                     <p>卡户行许可证</p>
                                                     <a class="input-file" href="javascript:void(0);">
-                                                        <input type="file" name="file" id="file4" onchange="preview(this)"/>
+                                                        <input type="file" name="file4" id="file4"/>
                                                     </a>
                                                 </aside>
                                                 <aside class="col-md-3">
                                                     <p>法人身份证照</p>
                                                     <a class="input-file" href="javascript:void(0);">
-                                                        <input type="file" name="file" id="file5" onchange="preview(this)"/>
+                                                        <input type="file" name="file5" id="file5" />
                                                     </a>
                                                 </aside>
                                                 <aside class="col-md-3">
                                                     <p>开户回执单</p>
                                                     <a class="input-file" href="javascript:void(0);">
-                                                        <input type="file" name="file" id="file6" onchange="preview(this)"/>
+                                                        <input type="file" name="file6" id="file6"/>
                                                     </a>
                                                 </aside>
                                             </div>
@@ -374,5 +374,28 @@
         </div>
     </div>
 </div>
+<!--图片上传预览-->
+<script type="text/javascript">
+    $(function () {
+        $("input[type='file']").each(function () {
+            $(this).change(function () {
+                var prevDiv = $(this).parent();
+                preview(this, prevDiv);
+            });
+        });
+        function preview(file, prevDiv) {
+            if (file.files && file.files[0]) {
+                var reader = new FileReader();
+                reader.onload = function (evt) {
+                    prevDiv.append('<img src="'+evt.target.result+'">');
+                }
+                reader.readAsDataURL(file.files[0]);
+            }
+            else {
+                prevDiv.append('<div class="img" style="filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod=scale,src=\'' + file.value + '\'"></div>');
+            }
+        }
+    });
+</script>
 </body>
 </html>
