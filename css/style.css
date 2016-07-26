@@ -15,7 +15,6 @@ ul ,li{padding:0;margin: 0; list-style: none;}
 .btn-border{border: 2px solid #fff; padding: 0.4rem 1.2rem; font-size:15px; border-radius: 0.4rem;}
 /*中间部分*/
 section{background: #F5F5F5;}
-.content-wrap{ padding-left: 0;padding-right: 0}
 .sidenav{background:#fff;height: auto;  padding-top:25px;}
 .sidenav .post-head{text-align: center;}
 .sidenav .post-head img{width:67px; height:67px; border-radius: 50%}
@@ -187,7 +186,7 @@ h2.card_listh2{float:left;}
 .api_test .btn_checkproblem{width:150px;font-size:15px;}
 /*手机端适配*/
 @media only screen and (max-width: 768px){
-    .content-wrap .container{margin-left: -15px;margin-right:-15px}
+    .nfc_slogo img{display: none;}
     .btn-border{padding: 0.4rem;}
     .navbar-collapse{padding: 0}
     .sidenav{padding-top:15px;}
@@ -207,9 +206,10 @@ h2.card_listh2{float:left;}
     .list_approve .col-xs-4{padding:0}
     .nfc_sbanner a{color:#324856}
     .list_approve ul li a,.list_nav ul li a,.list_nav ul li .glyphicon{color: #fff;}
-    .nfc_sbanner{height:50px;}
+    .nfc_sbanner{height:80px;}
     .nfc_logoff{margin-top: 15px;}
     .nfc_sbanner{background: url(../images/NFC_bluelogo.png) no-repeat 10px 10px #FFF;}
+    .nfc_slogo{padding-left:125px;}
     .btn-border{border:1px solid #324856;}
     .nfc_sbanner a:visited,.nfc_sbanner a:hover,.nfc_sbanner a:active{color:#324856}
     .sidebar{margin-top: -25px;padding-left: 0;padding-right: 0}
