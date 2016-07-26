@@ -22,7 +22,7 @@
             <div class="col-md-10 col-sm-10 col-xs-10">
                 <div class="nfc_slogo">
                     <a href="#">
-                        <img class="" src="images/NFC_LOGO.png"/>
+                        <img class="" src="images/NFC_logo.png"/>
                         <span>开发者平台</span>
                     </a>
                 </div>
@@ -35,37 +35,57 @@
     </div>
 </header>
 <!--中间部分-->
-<section class="content-wrap">
-    <div class="container">
+<section>
+    <div class="container content-wrap">
         <div class="row">
-            <aside class="col-md-3 sidebar">
-                <div class="sidenav">
-                    <div class="post-head">
-                        <img src="images/user_header.png"/><br>
-                        <P> 服务状态:<span>正常</span></P>
+            <aside class="col-md-3 col-sm-3 col-xs-12 sidebar">
+                <div class="navbar sidenav">
+                    <div class="col-xs-1 col-sm-12 col-md-12 paddingnone">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                                data-target="#navbar-collapsible" aria-expanded="false">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
                     </div>
-                    <div class="list_approve">
+                    <div class="col-xs-6 col-sm-12 col-md-12 post-head paddingnone padleft">
+                        <img src="images/user_header.png"/>
+                        <p>服务状态：<span>正常</span></p>
+                    </div>
+                    <div class="col-xs-5 col-sm-12 col-md-12 list_approve paddingnone">
                         <ul>
-                            <li class="col-md-4 col-sm-4 col-xs-4 li_1"><a href="shops_approve.html"><img src="images/approve_ico1.png"><span>认证</span></a></li>
-                            <li class="col-md-4 col-sm-4 col-xs-4 li_2"><a href="shops_message.html"><img src="images/approve_ico2.png"><span>消息</span></a></li>
-                            <li class="col-md-4 col-sm-4 col-xs-4 li_3"><a href="shops_password.html"><img src="images/approve_ico3.png"><Span>密码</Span></a></li>
+                            <li class="col-md-4 col-sm-4 col-xs-4 li_1"><a href="shops_approve.html"><img
+                                    src="images/approve_ico1.png"><span>认证</span></a></li>
+                            <li class="col-md-4 col-sm-4 col-xs-4 li_2"><a href="shops_message.html"><img
+                                    src="images/approve_ico2.png"><span>消息</span></a></li>
+                            <li class="col-md-4 col-sm-4 col-xs-4 li_3"><a href="shops_password.html"><img
+                                    src="images/approve_ico3.png"><Span>密码</Span></a></li>
                         </ul>
                     </div>
-                    <div class="list_nav">
-                        <ul>
-                            <li><a href="shops_index.html"><span class="glyphicon glyphicon-home"></span>首页</a></li>
-                            <li class="hover"><a href="shops_cardprofile.html"><span class="glyphicon glyphicon-folder-close"></span>卡券概况</a></li>
-                            <li><a href="shops_cardcount.html"><span class="glyphicon glyphicon-credit-card"></span>发卡统计</a></li>
-                            <li><a href="shops_api.html"><span class="glyphicon glyphicon-file"></span>API文档</a></li>
-                            <li><a href="shops_setting.html"><span class="glyphicon glyphicon-list"></span>参数配置</a></li>
-                            <li><a href="shops_operlog.html"><span class="glyphicon glyphicon-indent-left"></span>运营日志</a></li>
-                            <li><a href="#"><span class="glyphicon glyphicon-cog"></span>系统设置</a></li>
-                        </ul>
+                    <div class="navbar-collapse collapse list_nav" id="navbar-collapsible" aria-expanded="false">
+                        <div class="col-xs-12 col-sm-12 col-md-12 paddingnone">
+                            <ul>
+                                <li class="hover"><a href="shops_index.html"><span
+                                        class="glyphicon glyphicon-home"></span>首页</a></li>
+                                <li><a href="shops_cardprofile.html"><span
+                                        class="glyphicon glyphicon-folder-close"></span>卡券概况</a></li>
+                                <li><a href="shops_cardcount.html"><span
+                                        class="glyphicon glyphicon-credit-card"></span>发卡统计</a></li>
+                                <li><a href="shops_api.html"><span class="glyphicon glyphicon-file"></span>API文档</a>
+                                </li>
+                                <li><a href="shops_setting.html"><span class="glyphicon glyphicon-list"></span>参数配置</a>
+                                </li>
+                                <li><a href="shops_operlog.html"><span
+                                        class="glyphicon glyphicon-indent-left"></span>运营日志</a></li>
+                                <li><a href="#"><span class="glyphicon glyphicon-cog"></span>系统设置</a></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </aside>
             <!--右側內容-->
-            <main class="col-md-9 main-content">
+            <main class="col-md-9 col-sm-9 col-xs-12 main-content">
                 <div class="main_wicket shops_cardprofile">
                     <h2>>卡券概况</h2>
                     <form class="form-horizontal cardprofile_form1">
