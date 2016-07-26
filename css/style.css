@@ -1,4 +1,4 @@
-@media (min-width: 1200px) {
+@media (min-width:970px) {
     .container {
         width: 920px
     }
@@ -15,6 +15,7 @@ ul ,li{padding:0;margin: 0; list-style: none;}
 .btn-border{border: 2px solid #fff; padding: 0.4rem 1.2rem; font-size:15px; border-radius: 0.4rem;}
 /*中间部分*/
 section{background: #F5F5F5;}
+.content-wrap{padding-left: 0;padding-right: 0}
 .sidenav{background:#fff;height: auto;  padding-top:25px;}
 .sidenav .post-head{text-align: center;}
 .sidenav .post-head img{width:67px; height:67px; border-radius: 50%}
@@ -186,6 +187,7 @@ h2.card_listh2{float:left;}
 .api_test .btn_checkproblem{width:150px;font-size:15px;}
 /*手机端适配*/
 @media only screen and (max-width: 768px){
+    .content-wrap{padding-left:15px;padding-right:15px}
     .nfc_slogo img{display: none;}
     .btn-border{padding: 0.4rem;}
     .navbar-collapse{padding: 0}
