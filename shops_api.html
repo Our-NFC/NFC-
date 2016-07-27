@@ -62,16 +62,16 @@
                                     src="images/approve_ico3.png"><Span>密码</Span></a></li>
                         </ul>
                     </div>
-                    <div class="navbar-collapse collapse list_nav" id="navbar-collapsible" aria-expanded="false">
+                    <div class="navbar-collapse collapse list_nav paddingnone" id="navbar-collapsible" aria-expanded="false">
                         <div class="col-xs-12 col-sm-12 col-md-12 paddingnone">
                             <ul>
-                                <li class="hover"><a href="shops_index.html"><span
+                                <li><a href="shops_index.html"><span
                                         class="glyphicon glyphicon-home"></span>首页</a></li>
                                 <li><a href="shops_cardprofile.html"><span
                                         class="glyphicon glyphicon-folder-close"></span>卡券概况</a></li>
                                 <li><a href="shops_cardcount.html"><span
                                         class="glyphicon glyphicon-credit-card"></span>发卡统计</a></li>
-                                <li><a href="shops_api.html"><span class="glyphicon glyphicon-file"></span>API文档</a>
+                                <li class="hover"><a href="shops_api.html"><span class="glyphicon glyphicon-file"></span>API文档</a>
                                 </li>
                                 <li><a href="shops_setting.html"><span class="glyphicon glyphicon-list"></span>参数配置</a>
                                 </li>
@@ -91,7 +91,7 @@
                         <P class="card_listback"><a href="shops_apitest.html">API 测试</a> </P>
                     </div>
                     <div class="api_word">
-
+                        <iframe src="doc/API.html" id="dociframe" width="700" height="300" frameborder="0" scrolling="auto"></iframe>
                     </div>
                 </div>
             </main>
@@ -130,5 +130,13 @@
         </div>
     </div>
 </div>
+<!--iframe高度自适应-->
+<script>
+    $(window.parent.document).find("#dociframe").load(function(){
+        var main = $(window.parent.document).find("#dociframe");
+        var thisheight = $(document).height()+30;
+        main.height(thisheight);
+    });
+</script>
 </body>
 </html>

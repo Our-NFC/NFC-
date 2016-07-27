@@ -19,8 +19,8 @@ section{background: #F5F5F5;}
 .sidenav{background:#fff;height: auto;  padding-top:25px;}
 .sidenav .post-head{text-align: center;}
 .sidenav .post-head img{width:67px; height:67px; border-radius: 50%}
-.sidenav .post-head p{width:70%;margin:15px auto 0;font-size:16px;color: #333; color:#fff; background:#006d46;padding: 5px; cursor:pointer}
-.sidenav .post-head p span{}
+.sidenav .post-head p{width:70%;margin:15px auto 0;font-size:16px;color: #333; color:#666; padding: 5px; cursor:pointer}
+.sidenav .post-head p span{background:#006d46;color: #fff ;padding: 5px;}
 @media only screen and (min-width: 768px) and (max-width: 970px) {
     .sidenav .post-head p{width: 100%;}
     .list_approve ul li.col-sm-4{padding:0}
@@ -185,6 +185,7 @@ h2.card_listh2{float:left;}
 .api_test .coltips{padding:4px 0 0 0;  font-size:12px;color: #999}
 .api_test .coltips span{color:red}
 .api_test .btn_checkproblem{width:150px;font-size:15px;}
+.dill_btn{text-align:right;margin-right: 33px;}
 /*手机端适配*/
 @media only screen and (max-width: 768px){
     .content-wrap{padding-left:15px;padding-right:15px}
@@ -201,7 +202,7 @@ h2.card_listh2{float:left;}
     .index_h2{display: none;}
     .main_wicket .item_list{margin-top: -48px;}
     .sidenav .post-head img{float:left; width:45px; height:45px;}
-    .sidenav .post-head p{float:left; width:auto;margin-left: 5px;font-size: 12px;margin-top: 10px;}
+    .sidenav .post-head p{float:left; width:auto;margin-left: 5px;font-size: 12px;margin-top: 10px; color: #fff}
     .list_approve ul{margin-top: 0}
     .list_approve ul li img{width: 21px; height: 25px;}
     .list_approve ul li{font-size: 12px;}
