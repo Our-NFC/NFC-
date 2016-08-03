@@ -91,7 +91,7 @@
                         <P class="card_listback"><a href="shops_apitest.html">API 测试</a> </P>
                     </div>
                     <div class="api_word">
-                        <iframe src="doc/API.html" id="dociframe" width="700" height="300" frameborder="0" scrolling="auto"></iframe>
+                        <iframe src="doc/API.html" id="dociframe" width="700"  frameborder="0" marginheight="0" marginwidth="0" scrolling="yes"></iframe>
                     </div>
                 </div>
             </main>
@@ -132,11 +132,16 @@
 </div>
 <!--iframe高度自适应-->
 <script>
-    $(window.parent.document).find("#dociframe").load(function(){
-        var main = $(window.parent.document).find("#dociframe");
-        var thisheight = $(document).height()+30;
-        main.height(thisheight);
-    });
+    function reinitIframe(){
+        var iframe=document.getElementById("dociframe");
+        try{
+            var bHeight=iframe.contentWindow.document.body.scrollHeight;
+            var dHeight=iframe.contentWindow.document.documentElement.scrollHeight;
+            var height=Math.max(bHeight,dHeight);
+            iframe.height=height;
+        }catch(ex){}
+    }
+    window.setInterval("reinitIframe()",200);
 </script>
 </body>
 </html>
